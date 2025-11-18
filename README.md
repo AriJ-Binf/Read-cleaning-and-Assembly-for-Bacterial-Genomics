@@ -1,1 +1,1 @@
-# Read-cleaning-and-Assembly-for-Bacterial-Genomics
+# Read Cleaning and Assembly for Bacterial Genomics
