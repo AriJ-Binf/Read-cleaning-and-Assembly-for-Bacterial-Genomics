@@ -2,10 +2,6 @@
 A flexible, end-to-end read trimming, QC, and genome assembly pipeline for paired-end Illumina data.
 Supports Trimmomatic or fastp for read trimming and performs SPAdes assembly for each sample automatically.
 
-**Overview**
-
-This script performs the following steps for each paired-end sample in an input directory:
-
 ## Quality Control
 
 FastQC (Trimmomatic mode only)
