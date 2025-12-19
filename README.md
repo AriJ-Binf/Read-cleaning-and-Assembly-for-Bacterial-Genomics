@@ -33,29 +33,9 @@ Paired-end FASTQ files named:
 SAMPLE_1.fastq.gz
 SAMPLE_2.fastq.gz
 
-
 All input files must be located in a single input directory
 
 Gzipped FASTQ files are required
-
-Directory Structure (Output)
-
-For each sample (SAMPLE), the following structure is created:
-
-SAMPLE/
-├── QC/
-│   └── FastQC reports (Trimmomatic mode only)
-├── trim/
-│   ├── r1.paired.fq.gz
-│   ├── r2.paired.fq.gz
-│   ├── singletons.fq.gz
-│   ├── trimming logs
-│   └── fastp.html / fastp.json (fastp mode)
-└── asm/
-    └── spades/
-        ├── contigs.fasta
-        ├── spades.stdout.txt
-        └── spades.stderr.txt
 
 ## Dependencies
 
