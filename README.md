@@ -2,19 +2,17 @@
 A flexible, end-to-end read trimming, QC, and genome assembly pipeline for paired-end Illumina data.
 Supports Trimmomatic or fastp for read trimming and performs SPAdes assembly for each sample automatically.
 
-Designed for bacterial genomics workflows using SRA-style paired FASTQ files.
-
-Overview
+**Overview**
 
 This script performs the following steps for each paired-end sample in an input directory:
 
-Quality Control
+## Quality Control
 
 FastQC (Trimmomatic mode only)
 
 fastp HTML/JSON reports (fastp mode)
 
-Read Trimming
+## Read Trimming
 
 Adapter trimming (optional)
 
@@ -24,7 +22,7 @@ Minimum read length filtering
 
 Singleton read handling
 
-Genome Assembly
+## Genome Assembly
 
 SPAdes (paired reads + optional singletons)
 
@@ -32,7 +30,7 @@ Assembly logs and contigs output per sample
 
 Each sample is processed independently and written to its own output directory.
 
-Input Requirements
+### Input Requirements
 
 Paired-end FASTQ files named:
 
@@ -63,12 +61,9 @@ SAMPLE/
         ├── spades.stdout.txt
         └── spades.stderr.txt
 
-Dependencies
+## Dependencies
 
 Make sure the following tools are available in your PATH:
-
-bash (≥ 4)
-
 FastQC
 
 Trimmomatic or fastp
